@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #BeginEditable "doctitle" -->
+<title></title>
+<!-- #EndEditable -->
+<link href="styles/style2.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.style1 {
+	left: 7px;
+	top: 0px;
+}
+.style2 {
+	font-size: x-large;
+	color: #FF0000;
+}
+.style3 {
+	color: #FF0000;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Begin Container -->
+<div id="container" class="style1">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<img src="assest/america-globe.jpg" height="66" width="95" alt="" /><p>
+		<span class="style2">Lodge Creek Global Service </span>
+		<span class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; office (757) 
+		971-3137<br />
+		fax (757) 971-0345<br />
+		toll-free (800) 971-8000</p>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li></li>
+			<li><a href="Feedbackform.html">Feed Back</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	
+			<h2>Lodge Creek Global Service</h2>
+<TABLE width=400><TR><TD>
+  <P class=start>This demonstrates a website feedback form in multi-page 
+  CSS-Positioned form. This information will be put in our database and you have 
+  to exit out the window to quiet the form</p>   
+  
+    </TD></TR><TR><TD align=right><FORM>
+    <INPUT TYPE="Button" VALUE="Next Page" ONCLICK="movePage(2)"></FORM></TD></TR></TABLE>
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+			<SCRIPT LANGUAGE="JavaScript" src="http://jdstiles.com/java/js/noscape.js"></SCRIPT>
+<link rel=stylesheet type=text/css href="hs.css">
+<style type="text/css"><!--
+    H2 {color: darkred; }
+    H3 {text-align: center; color: darkred; }
+    TD {font: arial}
+    #page1, #page2, #page3, #page4 {position: absolute; text-align: center }
+--></STYLE>
+  <SCRIPT LANGUAGE="JavaScript" tye="text/javascript"><!--
+  
+ 
+  function getElement(elName) {    
+    // Get an element from its ID
+    if (allSupport)      
+     return document.all[elName]    
+    else
+      return document.layers[elName]  
+  }
+ 
+  function setVisibility(el, bDisplay) {    
+    // Hide or show to tip
+    if (bDisplay)      
+      if (allSupport)        
+        el.style.visibility = "visible" 
+      else        
+        el.visibility = "show";    
+      else      
+        if (allSupport)
+          el.style.visibility = "hidden"      
+        else        
+          el.visibility = "hidden"
+  }
+ 
+  function movePage(what) {
+   if ((allSupport) || (layersSupport))
+     for (var i=1; i <=4; i++) 
+       setVisibility(getElement("page"+i),what==i)
+  }
+// --></script>
+<script type="text/javascript"><!--
+    var allSupport = (document.all!=null)
+    var layersSupport = (document.layers!=null)
+ 
+    function checkValue(dest, src) {
+      if ((src.type=="radio") || (src.type=="checkbox")) {
+        if (src.checked) 
+          dest.value = src.value;
+      }
+      else
+        if (src.type=="select-one")
+          dest.value = src.options[src.selectedIndex].value
+        else
+          dest.value = src.value
+    }
+ 
+    function findForms(fSubmit, d) {
+      var formsLength = d.forms.length, fSource, elementsLength, eSource
+      for (var i=0; i < formsLength; i++) {
+        fSource = d.forms[i]
+        if ((fSubmit.name==fSource.name) && (fSubmit!=fSource)) {
+          elementsLength = fSource.length
+          for (var j=0; j < elementsLength; j++) {
+            eSource = fSource[j]
+            if (fSubmit[eSource.name]!=null)
+              checkValue(fSubmit[eSource.name], eSource)
+          }
+        }
+      }
+      if (layersSupport) {
+        var layersLength = d.layers.length
+        for (var l=0; l < layersLength; l++)
+          findForms(fSubmit, d.layers[l].document)
+      }
+    }
+ 
+    function processSubmit(frm) {
+      var elementsLength = frm.length
+      for (var i=0; i < elementsLength; i++)
+        if (frm[i].type=="text")
+          frm[i].value = ""
+      findForms(frm, window.document)      
+    }    
+// --></script>
+<BODY>
+
+<center>
+<DIV ID=page1>
+<center>
+
+</TD></TR></TABLE></DIV></center>
+  <DIV ID=page2 STYLE="visibility: hidden">
+  <FORM NAME="userInfo" ONSUBMIT="return false">
+  
+  <TABLE WIDTH=400><TR><TD COLSPAN=2><H3>User Information</H3></TD></TR><TR><TD>
+    Name:</TD><TD><INPUT TYPE="text" NAME="userName"></TD></TR><TR><TD>
+    Address</TD><TD><TEXTAREA ROWS=5 NAME="address"></TEXTAREA></TD></TR><TR><TD>  
+    City</TD><TD><INPUT TYPE="text" NAME="city"></TD></TR><TR><TD>
+    State</TD><TD><INPUT TYPE="text" NAME="state"></TD></TR><TR><TD>
+    Country</TD><TD><INPUT TYPE="text" VALUE="USA" NAME="country"></TD></TR><TR><TD COLSPAN=2>
+    <TABLE width=100%><TR><TD ALIGN=LEFT>
+    <INPUT TYPE="Button" VALUE="Previous Page" ONCLICK="movePage(1)"></TD><TD ALIGN=RIGHT>
+    <INPUT TYPE="Button" VALUE="Next Page" ONCLICK="movePage(3)"></TD></TR></TABLE>
+    </TD></TR></TABLE></TD></TR></TABLE></TD></TR></TABLE></FORM></DIV>
+  <DIV ID=page3 STYLE="visibility: hidden"><FORM NAME="userInfo" ONSUBMIT="return false">
+    <TABLE WIDTH=400><TR><TD colspan=2><H3>Newsletter</H3></TD></TR><TR><TD>
+      Send Newsletter:</TD><TD><INPUT TYPE="checkbox" NAME="info" VALUE="SendInfo">
+    </TD></TR><TR><TD>E-Mail Address:</TD><TD><INPUT TYPE="text" NAME="email">
+    </TD></TR><TR><TD>Please select website rating from 1 the best and 4 the worst:</TD><TD><INPUT TYPE="radio" NAME="rating" VALUE="1"> 1<BR>
+    <INPUT TYPE="radio" NAME="rating" VALUE="2"> 2<BR>
+    <INPUT TYPE="radio" NAME="rating" VALUE="3"> 3<BR>
+    <INPUT TYPE="radio" NAME="rating" VALUE="4"> 4<br>
+    
+    </SELECT></TD></TR><TR><TD COLSPAN=2>
+    <TABLE width=100%><TR><TD ALIGN=LEFT>
+    <INPUT TYPE="Button" VALUE="Previous Page" ONCLICK="movePage(2)"></TD><TD ALIGN=RIGHT>
+    <INPUT TYPE="Button" VALUE="Next Page" ONCLICK="movePage(4)"></TD></TR></TABLE>
+    </TD></TR></TABLE></TD></TR></TABLE></FORM></DIV>
+  <DIV ID="page4" STYLE="visibility: hidden">
+    <FORM NAME="userInfo" ONSUBMIT="processSubmit(this); return false">
+    <TABLE WIDTH=500><TR><TD colspan=2><H3>Submit Information</H3></TD></TR><TR><TD>
+      <INPUT TYPE="Submit" VALUE="Simulate Submit"><P>Click the submit button to simulate the form submission. The fields below will represent the data you entered:</P>
+      <br><label>Name</label><INPUT TYPE="text" NAME="userName"></br>
+      <br><label>address</label><INPUT TYPE="text" NAME="address"></br>
+      <br><label>City</label><INPUT TYPE="text" NAME="city"></br>
+      <br><label>state</label><INPUT TYPE="text" NAME="state"></br>
+      <br><label>country</label><INPUT TYPE="text" NAME="country"></br>
+      <br><label>info</label><INPUT TYPE="text" NAME="info"></br>
+      <br><label>email</label><INPUT TYPE="text" NAME="email"></br>
+      <br><label>website rating</label> <INPUT TYPE="text" NAME="rating"></br>
+      <INPUT TYPE="text" NAME="favorite"></TD></TR><TR><TD ALIGN=left>
+      <P><INPUT TYPE="Button" VALUE="Previous Page" ONCLICK="movePage(3)"></TD></TR></TABLE>
+      <p><INPUT type="reset" value="reset"></p></td></tr></TABLE>
+      
+    </FORM>
+
+	<div id="footer">
+		<p><a href="home.html">Home</a> | <a href="about.html">About</a> |&nbsp;
+		<a href="contact.html">Contact</a> |
+		
+		<a href="Feedbackform.html">Feed back form on product</a> |
+		<a href="websitefeedbackform.html">Feed back form quality of the website</a> | <a href="products.html">Products</a> 
+		|<a href="services.html">Services</a> |
+		<a href="site_map.html">Site Map</a></p>
+		<p>Copyright © 2010 Lodge Creek Global Buisness Service. All Rights Reserved.</p>
+	</div>
+	</CENTER>
+	<!-- End Footer -->
+<!-- End Container -->
+
+</body>
+
+</html>

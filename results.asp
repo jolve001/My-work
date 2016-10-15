@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- #BeginEditable "doctitle" -->
+<title></title>
+<!-- #EndEditable -->
+<link href="styles/style2.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.style1 {
+	left: 7px;
+	top: 0px;
+}
+.style2 {
+	font-size: x-large;
+	color: #FF0000;
+}
+.style3 {
+	color: #FF0000;
+}
+</style>
+</head>
+
+<body>
+
+<form id="form1" runat="server">
+
+<!-- Begin Container -->
+<div id="container" class="style1">
+	<!-- Begin Masthead -->
+	<div id="masthead">
+		<img src="assest/america-globe.jpg" height="66" width="95" alt="" /><p>
+		<span class="style2">Lodge Creek Global Service </span>
+		<span class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; office (757) 
+		971-3137<br />
+		fax (757) 971-03454<br />
+		toll-free (800) 971-80</p>
+	</div>
+	<!-- End Masthead -->
+	<!-- Begin Navigation -->
+	<div id="navigation">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li></li>
+			<li><a href="Feedbackform.html">Feed Back</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+	<!-- End Navigation -->
+	<!-- Begin Page Content -->
+	<div id="page_content">
+		<!-- Begin Left Column -->
+		<div id="column_l">
+			<!-- #BeginEditable "content" -->
+			<h2>Lodge Creek Global Servic</h2>
+			<p>
+			<asp:GridView id="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="AccessDataSource1">
+				<Columns>
+					<asp:boundfield DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID">
+					</asp:boundfield>
+					<asp:boundfield DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName">
+					</asp:boundfield>
+					<asp:boundfield DataField="LastName" HeaderText="LastName" SortExpression="LastName">
+					</asp:boundfield>
+					<asp:boundfield DataField="E-mail Address" HeaderText="E-mail Address" SortExpression="E-mail Address">
+					</asp:boundfield>
+					<asp:boundfield DataField="Business Phone" HeaderText="Business Phone" SortExpression="Business Phone">
+					</asp:boundfield>
+					<asp:boundfield DataField="Job Title" HeaderText="Job Title" SortExpression="Job Title">
+					</asp:boundfield>
+					<asp:boundfield DataField="Home Address" HeaderText="Home Address" SortExpression="Home Address">
+					</asp:boundfield>
+					<asp:boundfield DataField="Notes" HeaderText="Notes" SortExpression="Notes">
+					</asp:boundfield>
+				</Columns>
+			</asp:GridView>
+			<asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="C:\Users\network admin\Desktop\CIS5610dropshipping website\CH11.mdb" SelectCommand="SELECT * FROM [employees]">
+			</asp:AccessDataSource>
+			</p>
+			<p>insert content here</p>
+			<!-- #EndEditable --></div>
+		<!-- End Left Column -->
+		<!-- Begin Right Column -->
+		<div id="column_r">
+			<!-- #BeginEditable "sidebar" -->
+			<h3>Headline 3</h3>
+			<p>insert content here</p>
+			<!-- #EndEditable --></div>
+		<!-- End Right Column --></div>
+	<!-- End Page Content -->
+	<!-- Begin Footer -->
+	<div id="footer">
+		<p><a href="home.html">Home</a> | <a href="about.html">About</a> |&nbsp;
+		<a href="contact.html">Contact</a> |
+		
+		<a href="Feedbackform.html">Feed back form on product</a> |
+		<a href="websitefeedbackform.html">Feed back form quality of the website</a> | <a href="products.html">Products</a> 
+		|<a href="services.html">Services</a> |
+		<a href="site_map.html">Site Map</a></p>
+		<p>Copyright © 2010 Lodge Creek Global Buisness Service. All Rights Reserved.</p>
+	</div>
+	<!-- End Footer --></div>
+<!-- End Container -->
+
+</form>
+
+</body>
+
+</html>
